@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emergency Service Directory</title>
+
+    <!-- Connecting CSS File... -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Connecting Tailwind CSS...  -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- Connecting DaisyUI...  -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+
+    <!-- Connecting FontAwesome...  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    
+    <!-- Header Part -->
+    <header>
+        
+        <!-- Navbar Section -->
+        <nav>
+            
+            <section class="flex justify-between items-center my-[24px]">
+
+                <!-- Logo Section -->
+                <div class="flex justify-center items-center gap-[10px] ml-[60px]">
+                    <img class="h-[50px]" src="assets/logo.png" alt="logo">
+                    <h1 class="text-[#006747] font-extrabold text-xl">Emergency <br> Service</h1>
+                </div>
+                
+                <!-- Score Section -->
+                <div class=" flex justify-center items-center gap-[20px] mr-[60px]">
+                    <!-- Heart Score -->
+                    <div class="bg_color flex justify-center items-center gap-[10px] px-[35px] py-[11px] rounded-[50px]">
+                        <span class="font-bold">0</span>
+                        <img class="h-[24px]" src="assets/heart.png" alt="heart icon">
+                    </div>
+                    
+                    <!-- Coin Score -->
+                    <div class="bg_color flex justify-center items-center gap-[10px] px-[35px] py-[11px] rounded-[50px]">
+                        <span class="font-bold">100</span>
+                        <img class="h-[24px]" src="assets/coin.png" alt="coin icon">
+                    </div>
+                    
+                    <!-- Copy Score -->
+                    <div class="font-semibold bg-[#00A63E] text-white flex justify-center items-center gap-[10px] px-[35px] py-[11px] rounded-[50px]">
+                        <span class="font-bold">0</span>
+                        <span class="font-bold">Copy</span>
+                    </div>
+                </div>
+            </section>
+        </nav>
+
+        <!-- Banner Section  -->
+         <section class="banner flex-col gap-[11px] py-[21px]">
+            <img class=" h-[92px] w-[92px] mx-auto" src="assets/logo-dark.png" alt="Dark logo">
+            <h2 class="text-white text-center text-[40px] font-bold">Emergency Service Directory</h2>
+            <p class="text-white text-center text-[20px] font-semibold">Government Emergency Services at Your Fingertip – A Project by  Government of the People’s Republic of Bangladesh</p>
+         </section>
+    </header>
+    
+    <!-- Cart Section  -->
+    <main class="bg_color">
+
+        <section class="flex gap-[30px] mx-auto ">
+
+            <!-- Service Section  -->
+            <div class="my-[48px] grid grid-cols-3 gap-[30px]">
+                
+                <!-- National Emergency Number -->
+                <div class="shadow bg-white p-[32px] w-[436px] rounded-[12px]">
+                    <!-- Icons  -->
+                    <div class="flex justify-between items-center">
+                        <div class=" bg-[#FFE3E2] w-[60px] h-[60px] flex justify-center items-center rounded-[16px]"><img class="w-[32px] h-[32px]" src="assets/emergency.png" alt="emergency icon"></div>
+                        <i class="fa-regular fa-heart h-[24px]"></i>
+                    </div>
+                    <!-- Service headline  -->
+                    <div class="mt-4">
+                        <h4 class="text-2xl font-bold">National Emergency Number</h4>
+                        <p class="text-[18px] text-[#5C5C5C]">National Emergency</p>
+                    </div>
+                    <!-- Service number & category  -->
+                    <div class="mt-6">
+                        <h4 class="text-[32px] font-bold">999</h4>
+                        <div class="bg_color px-[16px] py-[6px] w-[53px] rounded-[9999px]"><p class="text-[18px] text-[#5C5C5C]" >All</p></div>
+                    </div>
+                    <!-- Action Buttons  -->
+                    <div class="flex gap-[8px] mt-6">
+                        <button class="btn btn_copy"> <i class="fa-regular fa-copy"></i> Copy</button>
+                        <button class="btn btn_call"> <i class="fa-solid fa-phone"></i>Call</button>
+                    </div>
+                </div>
+
+                <!-- Police Helpline Number -->
+                <div class="shadow bg-white p-[32px] w-[436px] rounded-[12px]">
+                    <!-- Icons  -->
+                    <div class="flex justify-between items-center">
+                        <div class=" bg-[#FFE3E2] w-[60px] h-[60px] flex justify-center items-center rounded-[16px]"><img class="w-[32px] h-[32px]" src="assets/emergency.png" alt="emergency icon"></div>
+                        <i class="fa-regular fa-heart h-[24px]"></i>
+                    </div>
+                    <!-- Service headline  -->
+                    <div class="mt-4">
+                        <h4 class="text-2xl font-bold">National Emergency Number</h4>
+                        <p class="text-[18px] text-[#5C5C5C]">National Emergency</p>
+                    </div>
+                    <!-- Service number & category  -->
+                    <div class="mt-6">
+                        <h4 class="text-[32px] font-bold">999</h4>
+                        <div class="bg_color px-[16px] py-[6px] w-[53px] rounded-[9999px]"><p class="text-[18px] text-[#5C5C5C]" >All</p></div>
+                    </div>
+                    <!-- Action Buttons  -->
+                    <div class="flex gap-[8px] mt-6">
+                        <button class="btn btn_copy"> <i class="fa-regular fa-copy"></i> Copy</button>
+                        <button class="btn btn_call"> <i class="fa-solid fa-phone"></i>Call</button>
+                    </div>
+                </div>
+
+                <!-- Fire Service Number -->
+                <div class="shadow bg-white p-[32px] w-[436px] rounded-[12px]">
+                    <!-- Icons  -->
+                    <div class="flex justify-between items-center">
+                        <div class=" bg-[#FFE3E2] w-[60px] h-[60px] flex justify-center items-center rounded-[16px]"><img class="w-[32px] h-[32px]" src="assets/emergency.png" alt="emergency icon"></div>
+                        <i class="fa-regular fa-heart h-[24px]"></i>
+                    </div>
+                    <!-- Service headline  -->
+                    <div class="mt-4">
+                        <h4 class="text-2xl font-bold">National Emergency Number</h4>
+                        <p class="text-[18px] text-[#5C5C5C]">National Emergency</p>
+                    </div>
+                    <!-- Service number & category  -->
+                    <div class="mt-6">
+                        <h4 class="text-[32px] font-bold">999</h4>
+                        <div class="bg_color px-[16px] py-[6px] w-[53px] rounded-[9999px]"><p class="text-[18px] text-[#5C5C5C]" >All</p></div>
+                    </div>
+                    <!-- Action Buttons  -->
+                    <div class="flex gap-[8px] mt-6">
+                        <button class="btn btn_copy"> <i class="fa-regular fa-copy"></i> Copy</button>
+                        <button class="btn btn_call"> <i class="fa-solid fa-phone"></i>Call</button>
+                    </div>
+                </div>
+
+                <!-- Ambulance Service -->
+                <div class="shadow bg-white p-[32px] w-[436px] rounded-[12px]">
+                    <!-- Icons  -->
+                    <div class="flex justify-between items-center">
+                        <div class=" bg-[#FFE3E2] w-[60px] h-[60px] flex justify-center items-center rounded-[16px]"><img class="w-[32px] h-[32px]" src="assets/emergency.png" alt="emergency icon"></div>
+                        <i class="fa-regular fa-heart h-[24px]"></i>
+                    </div>
+                    <!-- Service headline  -->
+                    <div class="mt-4">
+                        <h4 class="text-2xl font-bold">National Emergency Number</h4>
+                        <p class="text-[18px] text-[#5C5C5C]">National Emergency</p>
+                    </div>
+                    <!-- Service number & category  -->
+                    <div class="mt-6">
+                        <h4 class="text-[32px] font-bold">999</h4>
+                        <div class="bg_color px-[16px] py-[6px] w-[53px] rounded-[9999px]"><p class="text-[18px] text-[#5C5C5C]" >All</p></div>
+                    </div>
+                    <!-- Action Buttons  -->
+                    <div class="flex gap-[8px] mt-6">
+                        <button class="btn btn_copy"> <i class="fa-regular fa-copy"></i> Copy</button>
+                        <button class="btn btn_call"> <i class="fa-solid fa-phone"></i>Call</button>
+                    </div>
+                </div>
+
+                <!-- Women & Child Helpline -->
+                <div class="shadow bg-white p-[32px] w-[436px] rounded-[12px]">
+                    <!-- Icons  -->
+                    <div class="flex justify-between items-center">
+                        <div class=" bg-[#FFE3E2] w-[60px] h-[60px] flex justify-center items-center rounded-[16px]"><img class="w-[32px] h-[32px]" src="assets/emergency.png" alt="emergency icon"></div>
+                        <i class="fa-regular fa-heart h-[24px]"></i>
+                    </div>
+                    <!-- Service headline  -->
+                    <div class="mt-4">
+                        <h4 class="text-2xl font-bold">National Emergency Number</h4>
+                        <p class="text-[18px] text-[#5C5C5C]">National Emergency</p>
+                    </div>
+                    <!-- Service number & category  -->
+                    <div class="mt-6">
+                        <h4 class="text-[32px] font-bold">999</h4>
+                        <div class="bg_color px-[16px] py-[6px] w-[53px] rounded-[9999px]"><p class="text-[18px] text-[#5C5C5C]" >All</p></div>
+                    </div>
+                    <!-- Action Buttons  -->
+                    <div class="flex gap-[8px] mt-6">
+                        <button class="btn btn_copy"> <i class="fa-regular fa-copy"></i> Copy</button>
+                        <button class="btn btn_call"> <i class="fa-solid fa-phone"></i>Call</button>
+                    </div>
+                </div>
+
+                <!-- Anti-Corruption Helpline -->
+                <div class="shadow bg-white p-[32px] w-[436px] rounded-[12px]">
+                    <!-- Icons  -->
+                    <div class="flex justify-between items-center">
+                        <div class=" bg-[#FFE3E2] w-[60px] h-[60px] flex justify-center items-center rounded-[16px]"><img class="w-[32px] h-[32px]" src="assets/emergency.png" alt="emergency icon"></div>
+                        <i class="fa-regular fa-heart h-[24px]"></i>
+                    </div>
+                    <!-- Service headline  -->
+                    <div class="mt-4">
+                        <h4 class="text-2xl font-bold">National Emergency Number</h4>
+                        <p class="text-[18px] text-[#5C5C5C]">National Emergency</p>
+                    </div>
+                    <!-- Service number & category  -->
+                    <div class="mt-6">
+                        <h4 class="text-[32px] font-bold">999</h4>
+                        <div class="bg_color px-[16px] py-[6px] w-[53px] rounded-[9999px]"><p class="text-[18px] text-[#5C5C5C]" >All</p></div>
+                    </div>
+                    <!-- Action Buttons  -->
+                    <div class="flex gap-[8px] mt-6">
+                        <button class="btn btn_copy"> <i class="fa-regular fa-copy"></i> Copy</button>
+                        <button class="btn btn_call"> <i class="fa-solid fa-phone"></i>Call</button>
+                    </div>
+                </div>
+
+                <!-- Electricity Helpline -->
+                <div class="shadow bg-white p-[32px] w-[436px] rounded-[12px]">
+                    <!-- Icons  -->
+                    <div class="flex justify-between items-center">
+                        <div class=" bg-[#FFE3E2] w-[60px] h-[60px] flex justify-center items-center rounded-[16px]"><img class="w-[32px] h-[32px]" src="assets/emergency.png" alt="emergency icon"></div>
+                        <i class="fa-regular fa-heart h-[24px]"></i>
+                    </div>
+                    <!-- Service headline  -->
+                    <div class="mt-4">
+                        <h4 class="text-2xl font-bold">National Emergency Number</h4>
+                        <p class="text-[18px] text-[#5C5C5C]">National Emergency</p>
+                    </div>
+                    <!-- Service number & category  -->
+                    <div class="mt-6">
+                        <h4 class="text-[32px] font-bold">999</h4>
+                        <div class="bg_color px-[16px] py-[6px] w-[53px] rounded-[9999px]"><p class="text-[18px] text-[#5C5C5C]" >All</p></div>
+                    </div>
+                    <!-- Action Buttons  -->
+                    <div class="flex gap-[8px] mt-6">
+                        <button class="btn btn_copy"> <i class="fa-regular fa-copy"></i> Copy</button>
+                        <button class="btn btn_call"> <i class="fa-solid fa-phone"></i>Call</button>
+                    </div>
+                </div>
+
+                <!-- BRAC Helpline -->
+                <div class="shadow bg-white p-[32px] w-[436px] rounded-[12px]">
+                    <!-- Icons  -->
+                    <div class="flex justify-between items-center">
+                        <div class=" bg-[#FFE3E2] w-[60px] h-[60px] flex justify-center items-center rounded-[16px]"><img class="w-[32px] h-[32px]" src="assets/emergency.png" alt="emergency icon"></div>
+                        <i class="fa-regular fa-heart h-[24px]"></i>
+                    </div>
+                    <!-- Service headline  -->
+                    <div class="mt-4">
+                        <h4 class="text-2xl font-bold">National Emergency Number</h4>
+                        <p class="text-[18px] text-[#5C5C5C]">National Emergency</p>
+                    </div>
+                    <!-- Service number & category  -->
+                    <div class="mt-6">
+                        <h4 class="text-[32px] font-bold">999</h4>
+                        <div class="bg_color px-[16px] py-[6px] w-[53px] rounded-[9999px]"><p class="text-[18px] text-[#5C5C5C]" >All</p></div>
+                    </div>
+                    <!-- Action Buttons  -->
+                    <div class="flex gap-[8px] mt-6">
+                        <button class="btn btn_copy"> <i class="fa-regular fa-copy"></i> Copy</button>
+                        <button class="btn btn_call"> <i class="fa-solid fa-phone"></i>Call</button>
+                    </div>
+                </div>
+
+                <!-- Bangladesh Railway Helpline  -->
+                <div class="shadow bg-white p-[32px] w-[436px] rounded-[12px]">
+                    <!-- Icons  -->
+                    <div class="flex justify-between items-center">
+                        <div class=" bg-[#FFE3E2] w-[60px] h-[60px] flex justify-center items-center rounded-[16px]"><img class="w-[32px] h-[32px]" src="assets/emergency.png" alt="emergency icon"></div>
+                        <i class="fa-regular fa-heart h-[24px]"></i>
+                    </div>
+                    <!-- Service headline  -->
+                    <div class="mt-4">
+                        <h4 class="text-2xl font-bold">National Emergency Number</h4>
+                        <p class="text-[18px] text-[#5C5C5C]">National Emergency</p>
+                    </div>
+                    <!-- Service number & category  -->
+                    <div class="mt-6">
+                        <h4 class="text-[32px] font-bold">999</h4>
+                        <div class="bg_color px-[16px] py-[6px] w-[53px] rounded-[9999px]"><p class="text-[18px] text-[#5C5C5C]" >All</p></div>
+                    </div>
+                    <!-- Action Buttons  -->
+                    <div class="flex gap-[8px] mt-6">
+                        <button class="btn btn_copy"> <i class="fa-regular fa-copy"></i> Copy</button>
+                        <button class="btn btn_call"> <i class="fa-solid fa-phone"></i>Call</button>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- History Section  -->
+            <div class="my-[48px]">
+                <div>
+                    <h4><i class="fa-regular fa-clock"></i>Call History</h4>
+                    <button class="btn btn_call">Clear</button>
+                </div>
+                <div>
+                    <div></div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+</body>
+</html>
