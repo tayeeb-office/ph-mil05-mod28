@@ -17,6 +17,9 @@
     <!-- Connecting FontAwesome...  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+    <!-- Connecting JS File...  -->
+    <script src="script.js"></script>
+
 </head>
 <body>
     
@@ -29,13 +32,13 @@
             <section class="flex justify-between items-center my-[24px]">
 
                 <!-- Logo Section -->
-                <div class="flex justify-center items-center gap-[10px] ml-[60px]">
+                <div class="logo_section flex justify-center items-center gap-[10px] ml-[60px]">
                     <img class="h-[50px]" src="assets/logo.png" alt="logo">
                     <h1 class="text-[#006747] font-extrabold text-xl">Emergency <br> Service</h1>
                 </div>
                 
                 <!-- Score Section -->
-                <div class=" flex justify-center items-center gap-[20px] mr-[60px]">
+                <div class=" score_txt flex justify-center items-center gap-[20px] mr-[60px]">
                     <!-- Heart Score -->
                     <div class="bg_color flex justify-center items-center gap-[10px] px-[35px] py-[11px] rounded-[50px]">
                         <span class="font-bold">0</span>
@@ -63,15 +66,22 @@
             <h2 class="text-white text-center text-[40px] font-bold">Emergency Service Directory</h2>
             <p class="text-white text-center text-[20px] font-semibold">Government Emergency Services at Your Fingertip – A Project by  Government of the People’s Republic of Bangladesh</p>
          </section>
+         
     </header>
     
     <!-- Cart Section  -->
     <main class="bg_color">
 
-        <section class=" w-[1120px] mx-auto py-[48px] grid grid-cols-4 gap-[30px] ">
+        <section class="main_row flex gap-[25px] py-[48px] w-[1140px] mx-auto">
                 
-                <!-- National Emergency Number -->
-                <div class="shadow bg-white p-[32px] rounded-[12px]">
+            <!-- Service Sectionr -->    
+            <div >
+
+                <!-- First Row -->
+                <div class=" row flex gap-[25px] mb-[25px]">
+
+                    <!-- National Emergency Number -->
+                    <div class="w-[310px] shadow bg-white p-[32px] rounded-[12px]">
                     <!-- Icons  -->
                     <div class="flex justify-between items-center">
                         <div class=" bg-[#FFE3E2] w-[60px] h-[60px] flex justify-center items-center rounded-[16px]"><img class="w-[32px] h-[32px]" src="assets/emergency.png" alt="emergency icon"></div>
@@ -92,10 +102,10 @@
                         <button class="btn btn_copy"> <i class="fa-regular fa-copy"></i> Copy</button>
                         <button class="btn btn_call"> <i class="fa-solid fa-phone"></i>Call</button>
                     </div>
-                </div>
+                    </div>
 
-                <!-- Police Helpline Number -->
-                <div class="shadow bg-white p-[32px] rounded-[12px]">
+                    <!-- Police Helpline Number -->
+                    <div class="w-[310px] shadow bg-white p-[32px] rounded-[12px]">
                     <!-- Icons  -->
                     <div class="flex justify-between items-center">
                         <div class=" bg-[#DFEFFF] w-[60px] h-[60px] flex justify-center items-center rounded-[16px]"><img class="w-[32px] h-[32px]" src="assets/police.png" alt="emergency icon"></div>
@@ -116,10 +126,10 @@
                         <button class="btn btn_copy"> <i class="fa-regular fa-copy"></i> Copy</button>
                         <button class="btn btn_call"> <i class="fa-solid fa-phone"></i>Call</button>
                     </div>
-                </div>
+                    </div>
 
-                <!-- Fire Service Number -->
-                <div class="shadow bg-white p-[32px] rounded-[12px]">
+                    <!-- Fire Service Number -->
+                    <div class="w-[310px] shadow bg-white p-[32px] rounded-[12px]">
                     <!-- Icons  -->
                     <div class="flex justify-between items-center">
                         <div class=" bg-[#FFE3E2] w-[60px] h-[60px] flex justify-center items-center rounded-[16px]"><img class="w-[32px] h-[32px]" src="assets/fire-service.png" alt="emergency icon"></div>
@@ -140,25 +150,16 @@
                         <button class="btn btn_copy"> <i class="fa-regular fa-copy"></i> Copy</button>
                         <button class="btn btn_call"> <i class="fa-solid fa-phone"></i>Call</button>
                     </div>
-                </div>
-
-                <!-- History Section  -->
-                <div class="row-span-3 bg-white rounded-[12px]">
-                <div class="flex justify-between items-center mx-[24px] mt-[24px]">
-                    <h4 class="font-bold"><i class="fa-regular fa-clock"></i> Call History</h4>
-                    <button class="btn btn_clear">Clear</button>
-                </div>
-                <div class="flex justify-between items-center mt-[24px] mx-[16px] p-[12px] bg-[#fafafa] rounded-[8px]">
-                    <div>
-                        <h5 class=" font-bold">Fire Service Number</h5>
-                        <p class=" text-[#5C5C5C]">999</p>
                     </div>
-                    <p class="">11:36:58 AM</p>
-                </div>
+
                 </div>
 
-                <!-- Ambulance Service -->
-                <div class="shadow bg-white p-[32px] rounded-[12px]">
+                
+                <!-- Second Row -->
+                <div class="row flex gap-[25px] mb-[25px]">
+
+                    <!-- Ambulance Service -->
+                    <div class="w-[310px] shadow bg-white p-[32px] rounded-[12px]">
                     <!-- Icons  -->
                     <div class="flex justify-between items-center">
                         <div class=" bg-[#FFE3E2] w-[60px] h-[60px] flex justify-center items-center rounded-[16px]"><img class="w-[32px] h-[32px]" src="assets/ambulance.png" alt="emergency icon"></div>
@@ -179,10 +180,10 @@
                         <button class="btn btn_copy"> <i class="fa-regular fa-copy"></i> Copy</button>
                         <button class="btn btn_call"> <i class="fa-solid fa-phone"></i>Call</button>
                     </div>
-                </div>
+                    </div>
 
-                <!-- Women & Child Helpline -->
-                <div class="shadow bg-white p-[32px] rounded-[12px]">
+                    <!-- Women & Child Helpline -->
+                    <div class="w-[310px] shadow bg-white p-[32px] rounded-[12px]">
                     <!-- Icons  -->
                     <div class="flex justify-between items-center">
                         <div class=" bg-[#FFE3E2] w-[60px] h-[60px] flex justify-center items-center rounded-[16px]"><img class="w-[32px] h-[32px]" src="assets/emergency.png" alt="emergency icon"></div>
@@ -203,10 +204,10 @@
                         <button class="btn btn_copy"> <i class="fa-regular fa-copy"></i> Copy</button>
                         <button class="btn btn_call"> <i class="fa-solid fa-phone"></i>Call</button>
                     </div>
-                </div>
+                    </div>
 
-                <!-- Anti-Corruption Helpline -->
-                <div class="shadow bg-white p-[32px] rounded-[12px]">
+                    <!-- Anti-Corruption Helpline -->
+                    <div class="w-[310px] shadow bg-white p-[32px] rounded-[12px]">
                     <!-- Icons  -->
                     <div class="flex justify-between items-center">
                         <div class=" bg-[#FFE3E2] w-[60px] h-[60px] flex justify-center items-center rounded-[16px]"><img class="w-[32px] h-[32px]" src="assets/emergency.png" alt="emergency icon"></div>
@@ -227,10 +228,16 @@
                         <button class="btn btn_copy"> <i class="fa-regular fa-copy"></i> Copy</button>
                         <button class="btn btn_call"> <i class="fa-solid fa-phone"></i>Call</button>
                     </div>
+                    </div>
+
                 </div>
 
-                <!-- Electricity Helpline -->
-                <div class="shadow bg-white p-[32px] rounded-[12px]">
+                
+                <!-- Third Row -->
+                <div class="row flex gap-[25px] ">
+
+                    <!-- Electricity Helpline -->
+                    <div class="w-[310px] shadow bg-white p-[32px] rounded-[12px]">
                     <!-- Icons  -->
                     <div class="flex justify-between items-center">
                         <div class=" bg-[#FFE3E2] w-[60px] h-[60px] flex justify-center items-center rounded-[16px]"><img class="w-[32px] h-[32px]" src="assets/emergency.png" alt="emergency icon"></div>
@@ -251,10 +258,10 @@
                         <button class="btn btn_copy"> <i class="fa-regular fa-copy"></i> Copy</button>
                         <button class="btn btn_call"> <i class="fa-solid fa-phone"></i>Call</button>
                     </div>
-                </div>
+                    </div>
 
-                <!-- BRAC Helpline -->
-                <div class="shadow bg-white p-[32px] rounded-[12px]">
+                    <!-- BRAC Helpline -->
+                    <div class="w-[310px] shadow bg-white p-[32px] rounded-[12px]">
                     <!-- Icons  -->
                     <div class="flex justify-between items-center">
                         <div class=" bg-[#FFE3E2] w-[60px] h-[60px] flex justify-center items-center rounded-[16px]"><img class="w-[32px] h-[32px]" src="assets/emergency.png" alt="emergency icon"></div>
@@ -275,10 +282,10 @@
                         <button class="btn btn_copy"> <i class="fa-regular fa-copy"></i> Copy</button>
                         <button class="btn btn_call"> <i class="fa-solid fa-phone"></i>Call</button>
                     </div>
-                </div>
+                    </div>
 
-                <!-- Bangladesh Railway Helpline  -->
-                <div class="shadow bg-white p-[32px] rounded-[12px]">
+                    <!-- Bangladesh Railway Helpline  -->
+                    <div class="w-[310px] shadow bg-white p-[32px] rounded-[12px]">
                     <!-- Icons  -->
                     <div class="flex justify-between items-center">
                         <div class=" bg-[#FFE3E2] w-[60px] h-[60px] flex justify-center items-center rounded-[16px]"><img class="w-[32px] h-[32px]" src="assets/emergency.png" alt="emergency icon"></div>
@@ -299,7 +306,34 @@
                         <button class="btn btn_copy"> <i class="fa-regular fa-copy"></i> Copy</button>
                         <button class="btn btn_call"> <i class="fa-solid fa-phone"></i>Call</button>
                     </div>
+                    </div>
+
                 </div>
+
+            </div>
+
+            <div >
+
+                    <!-- History Section  -->
+                    <div class="history_section shadow bg-white rounded-[12px]">
+                        
+                        <!-- Header Section -->
+                        <div class="flex justify-between items-center p-[24px]">
+                            <h4 class="font-bold"><i class="fa-regular fa-clock"></i> Call History</h4>
+                            <button class="btn btn_clear">Clear</button>
+                        </div>
+                        
+                        <!-- Records Section -->
+                        <div class="flex justify-between items-center p-[24px] mx-[16px] mb-[16px] bg-[#fafafa] rounded-[8px]">
+                            <div>
+                                <h5 class=" font-bold">Fire Service Number</h5>
+                                <p class=" text-[#5C5C5C]">999</p>
+                            </div>
+                            <p class="">11:36:58 AM</p>
+                        </div>
+
+                    </div>
+            </div>
             
         </section>
     </main>

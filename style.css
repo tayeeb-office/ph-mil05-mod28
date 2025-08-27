@@ -39,3 +39,64 @@ main section{
 .shadow{
     box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.15);
 }
+
+.history_section{
+
+    height: 1160px;
+    width: 400px;
+    overflow-y: scroll;
+
+}
+
+/* Mobile Responsiveness */
+
+@media (max-width: 767px){
+
+    nav section{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .logo_section{
+        margin-top: 30px;
+        margin: 30px auto 30px auto;
+    }
+
+    .score_txt{
+        
+        width: 250px;
+        margin: auto;
+    }
+
+    .banner h2{
+        margin-top: 16px;
+        font-size: 25px;
+    }
+
+    .banner p{
+        margin-top: 16px;
+        font-size: 18px;
+    }
+
+    .main_row{
+        display: flex;
+        flex-direction: column-reverse;
+        margin: auto;
+        width: 310px;
+    }
+
+    .row{
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+    }
+
+    .history_section{
+    height: 400px;
+    width: 310px;
+    overflow-y: scroll;
+    margin: auto;
+    }
+
+}
