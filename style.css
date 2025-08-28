@@ -48,6 +48,10 @@ main section{
 
 }
 
+.heartAction:hover{
+    color: red;
+}
+
 /* Mobile Responsiveness */
 
 @media (max-width: 767px){

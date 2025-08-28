@@ -17,9 +17,6 @@
     <!-- Connecting FontAwesome...  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <!-- Connecting JS File...  -->
-    <script src="script.js"></script>
-
 </head>
 <body>
     
@@ -41,7 +38,7 @@
                 <div class=" score_txt flex justify-center items-center gap-[20px] mr-[60px]">
                     <!-- Heart Score -->
                     <div class="bg_color flex justify-center items-center gap-[10px] px-[35px] py-[11px] rounded-[50px]">
-                        <span class="font-bold">0</span>
+                        <span id="heartScore" class="font-bold">0</span>
                         <img class="h-[24px]" src="assets/heart.png" alt="heart icon">
                     </div>
                     
@@ -53,7 +50,7 @@
                     
                     <!-- Copy Score -->
                     <div class="font-semibold bg-[#00A63E] text-white flex justify-center items-center gap-[10px] px-[35px] py-[11px] rounded-[50px]">
-                        <span class="font-bold">0</span>
+                        <span id="copyScore" class="font-bold">0</span>
                         <span class="font-bold">Copy</span>
                     </div>
                 </div>
@@ -81,11 +78,11 @@
                 <div class=" row flex gap-[25px] mb-[25px]">
 
                     <!-- National Emergency Number -->
-                    <div class="w-[310px] shadow bg-white p-[32px] rounded-[12px]">
+                    <div class="card w-[310px] shadow bg-white p-[32px] rounded-[12px]">
                     <!-- Icons  -->
                     <div class="flex justify-between items-center">
                         <div class=" bg-[#FFE3E2] w-[60px] h-[60px] flex justify-center items-center rounded-[16px]"><img class="w-[32px] h-[32px]" src="assets/emergency.png" alt="emergency icon"></div>
-                        <i class="fa-regular fa-heart h-[24px]"></i>
+                        <i class="heartAction fa-regular fa-heart h-[24px]"></i>
                     </div>
                     <!-- Service headline  -->
                     <div class="mt-4">
@@ -93,23 +90,23 @@
                         <p class="text-[18px] text-[#5C5C5C]">National Emergency</p>
                     </div>
                     <!-- Service number & category  -->
-                    <div class="mt-6">
-                        <h4 class="text-[32px] font-bold">999</h4>
+                    <div class="mt-6 ">
+                        <h4 class="copyNumber text-[32px] font-bold">999</h4>
                         <div class="bg-[#F2F2F2] px-[16px] py-[6px] w-[53px] rounded-[9999px]"><p class="text-[18px] text-[#5C5C5C]" >All</p></div>
                     </div>
                     <!-- Action Buttons  -->
                     <div class="flex gap-[8px] mt-6">
-                        <button class="btn btn_copy"> <i class="fa-regular fa-copy"></i> Copy</button>
+                        <button class="copyAction btn btn_copy"> <i class="fa-regular fa-copy"></i> Copy</button>
                         <button class="btn btn_call"> <i class="fa-solid fa-phone"></i>Call</button>
                     </div>
                     </div>
 
                     <!-- Police Helpline Number -->
-                    <div class="w-[310px] shadow bg-white p-[32px] rounded-[12px]">
+                    <div class="card w-[310px] shadow bg-white p-[32px] rounded-[12px]">
                     <!-- Icons  -->
                     <div class="flex justify-between items-center">
                         <div class=" bg-[#DFEFFF] w-[60px] h-[60px] flex justify-center items-center rounded-[16px]"><img class="w-[32px] h-[32px]" src="assets/police.png" alt="emergency icon"></div>
-                        <i class="fa-regular fa-heart h-[24px]"></i>
+                        <i class="heartAction fa-regular fa-heart h-[24px]"></i>
                     </div>
                     <!-- Service headline  -->
                     <div class="mt-4">
@@ -118,22 +115,22 @@
                     </div>
                     <!-- Service number & category  -->
                     <div class="mt-6">
-                        <h4 class="text-[32px] font-bold">999</h4>
+                        <h4 class="text-[32px] font-bold copyNumber">999</h4>
                         <div class="bg-[#F2F2F2] px-[16px] py-[6px] w-[79px] rounded-[9999px]"><p class="text-[18px] text-[#5C5C5C]" >Police</p></div>
                     </div>
                     <!-- Action Buttons  -->
                     <div class="flex gap-[8px] mt-6">
-                        <button class="btn btn_copy"> <i class="fa-regular fa-copy"></i> Copy</button>
+                        <button class="btn btn_copy copyAction"> <i class="fa-regular fa-copy"></i> Copy</button>
                         <button class="btn btn_call"> <i class="fa-solid fa-phone"></i>Call</button>
                     </div>
                     </div>
 
                     <!-- Fire Service Number -->
-                    <div class="w-[310px] shadow bg-white p-[32px] rounded-[12px]">
+                    <div class="card w-[310px] shadow bg-white p-[32px] rounded-[12px]">
                     <!-- Icons  -->
                     <div class="flex justify-between items-center">
                         <div class=" bg-[#FFE3E2] w-[60px] h-[60px] flex justify-center items-center rounded-[16px]"><img class="w-[32px] h-[32px]" src="assets/fire-service.png" alt="emergency icon"></div>
-                        <i class="fa-regular fa-heart h-[24px]"></i>
+                        <i class="heartAction fa-regular fa-heart h-[24px]"></i>
                     </div>
                     <!-- Service headline  -->
                     <div class="mt-4">
@@ -141,13 +138,13 @@
                         <p class="text-[18px] text-[#5C5C5C]">Fire Service</p>
                     </div>
                     <!-- Service number & category  -->
-                    <div class="mt-6">
-                        <h4 class="text-[32px] font-bold">999</h4>
+                    <div class="mt-6 ">
+                        <h4 class="text-[32px] font-bold copyNumber">999</h4>
                         <div class="bg-[#F2F2F2] px-[16px] py-[6px] w-[61px] rounded-[9999px]"><p class="text-[18px] text-[#5C5C5C]" >Fire</p></div>
                     </div>
                     <!-- Action Buttons  -->
                     <div class="flex gap-[8px] mt-6">
-                        <button class="btn btn_copy"> <i class="fa-regular fa-copy"></i> Copy</button>
+                        <button class="btn btn_copy copyAction"> <i class="fa-regular fa-copy"></i> Copy</button>
                         <button class="btn btn_call"> <i class="fa-solid fa-phone"></i>Call</button>
                     </div>
                     </div>
@@ -159,11 +156,11 @@
                 <div class="row flex gap-[25px] mb-[25px]">
 
                     <!-- Ambulance Service -->
-                    <div class="w-[310px] shadow bg-white p-[32px] rounded-[12px]">
+                    <div class="card w-[310px] shadow bg-white p-[32px] rounded-[12px]">
                     <!-- Icons  -->
                     <div class="flex justify-between items-center">
                         <div class=" bg-[#FFE3E2] w-[60px] h-[60px] flex justify-center items-center rounded-[16px]"><img class="w-[32px] h-[32px]" src="assets/ambulance.png" alt="emergency icon"></div>
-                        <i class="fa-regular fa-heart h-[24px]"></i>
+                        <i class="heartAction fa-regular fa-heart h-[24px]"></i>
                     </div>
                     <!-- Service headline  -->
                     <div class="mt-4">
@@ -171,23 +168,23 @@
                         <p class="text-[18px] text-[#5C5C5C]">Ambulance</p>
                     </div>
                     <!-- Service number & category  -->
-                    <div class="mt-6">
-                        <h4 class="text-[32px] font-bold">1994-999999</h4>
+                    <div class="mt-6 ">
+                        <h4 class="text-[32px] font-bold copyNumber">1994-999999</h4>
                         <div class="bg-[#F2F2F2] px-[16px] py-[6px] w-[83px] rounded-[9999px]"><p class="text-[18px] text-[#5C5C5C]" >Health</p></div>
                     </div>
                     <!-- Action Buttons  -->
                     <div class="flex gap-[8px] mt-6">
-                        <button class="btn btn_copy"> <i class="fa-regular fa-copy"></i> Copy</button>
+                        <button class="btn btn_copy copyAction"> <i class="fa-regular fa-copy"></i> Copy</button>
                         <button class="btn btn_call"> <i class="fa-solid fa-phone"></i>Call</button>
                     </div>
                     </div>
 
                     <!-- Women & Child Helpline -->
-                    <div class="w-[310px] shadow bg-white p-[32px] rounded-[12px]">
+                    <div class="card w-[310px] shadow bg-white p-[32px] rounded-[12px]">
                     <!-- Icons  -->
                     <div class="flex justify-between items-center">
                         <div class=" bg-[#FFE3E2] w-[60px] h-[60px] flex justify-center items-center rounded-[16px]"><img class="w-[32px] h-[32px]" src="assets/emergency.png" alt="emergency icon"></div>
-                        <i class="fa-regular fa-heart h-[24px]"></i>
+                        <i class="heartAction fa-regular fa-heart h-[24px]"></i>
                     </div>
                     <!-- Service headline  -->
                     <div class="mt-4">
@@ -195,23 +192,23 @@
                         <p class="text-[18px] text-[#5C5C5C]">Women & Child Helpline</p>
                     </div>
                     <!-- Service number & category  -->
-                    <div class="mt-6">
-                        <h4 class="text-[32px] font-bold">109</h4>
+                    <div class="mt-6 ">
+                        <h4 class="text-[32px] font-bold copyNumber">109</h4>
                         <div class="bg-[#F2F2F2] px-[16px] py-[6px] w-[68px] rounded-[9999px]"><p class="text-[18px] text-[#5C5C5C]" >Help</p></div>
                     </div>
                     <!-- Action Buttons  -->
                     <div class="flex gap-[8px] mt-6">
-                        <button class="btn btn_copy"> <i class="fa-regular fa-copy"></i> Copy</button>
+                        <button class="btn btn_copy copyAction"> <i class="fa-regular fa-copy"></i> Copy</button>
                         <button class="btn btn_call"> <i class="fa-solid fa-phone"></i>Call</button>
                     </div>
                     </div>
 
                     <!-- Anti-Corruption Helpline -->
-                    <div class="w-[310px] shadow bg-white p-[32px] rounded-[12px]">
+                    <div class="card w-[310px] shadow bg-white p-[32px] rounded-[12px]">
                     <!-- Icons  -->
                     <div class="flex justify-between items-center">
                         <div class=" bg-[#FFE3E2] w-[60px] h-[60px] flex justify-center items-center rounded-[16px]"><img class="w-[32px] h-[32px]" src="assets/emergency.png" alt="emergency icon"></div>
-                        <i class="fa-regular fa-heart h-[24px]"></i>
+                        <i class="heartAction fa-regular fa-heart h-[24px]"></i>
                     </div>
                     <!-- Service headline  -->
                     <div class="mt-4">
@@ -219,13 +216,13 @@
                         <p class="text-[18px] text-[#5C5C5C]">Anti-Corruption</p>
                     </div>
                     <!-- Service number & category  -->
-                    <div class="mt-6">
-                        <h4 class="text-[32px] font-bold">106</h4>
+                    <div class="mt-6 ">
+                        <h4 class="text-[32px] font-bold copyNumber">106</h4>
                         <div class="bg-[#F2F2F2] px-[16px] py-[6px] w-[73px] rounded-[9999px]"><p class="text-[18px] text-[#5C5C5C]" >Govt.</p></div>
                     </div>
                     <!-- Action Buttons  -->
                     <div class="flex gap-[8px] mt-6">
-                        <button class="btn btn_copy"> <i class="fa-regular fa-copy"></i> Copy</button>
+                        <button class="btn btn_copy copyAction"> <i class="fa-regular fa-copy"></i> Copy</button>
                         <button class="btn btn_call"> <i class="fa-solid fa-phone"></i>Call</button>
                     </div>
                     </div>
@@ -237,11 +234,11 @@
                 <div class="row flex gap-[25px] ">
 
                     <!-- Electricity Helpline -->
-                    <div class="w-[310px] shadow bg-white p-[32px] rounded-[12px]">
+                    <div class="card w-[310px] shadow bg-white p-[32px] rounded-[12px]">
                     <!-- Icons  -->
                     <div class="flex justify-between items-center">
                         <div class=" bg-[#FFE3E2] w-[60px] h-[60px] flex justify-center items-center rounded-[16px]"><img class="w-[32px] h-[32px]" src="assets/emergency.png" alt="emergency icon"></div>
-                        <i class="fa-regular fa-heart h-[24px]"></i>
+                        <i class="heartAction fa-regular fa-heart h-[24px]"></i>
                     </div>
                     <!-- Service headline  -->
                     <div class="mt-4">
@@ -250,22 +247,22 @@
                     </div>
                     <!-- Service number & category  -->
                     <div class="mt-6">
-                        <h4 class="text-[32px] font-bold">16216</h4>
+                        <h4 class="text-[32px] font-bold copyNumber">16216</h4>
                         <div class="bg-[#F2F2F2] px-[16px] py-[6px] w-[109px] rounded-[9999px]"><p class="text-[18px] text-[#5C5C5C]" >Electricity</p></div>
                     </div>
                     <!-- Action Buttons  -->
                     <div class="flex gap-[8px] mt-6">
-                        <button class="btn btn_copy"> <i class="fa-regular fa-copy"></i> Copy</button>
+                        <button class="btn btn_copy copyAction"> <i class="fa-regular fa-copy"></i> Copy</button>
                         <button class="btn btn_call"> <i class="fa-solid fa-phone"></i>Call</button>
                     </div>
                     </div>
 
                     <!-- BRAC Helpline -->
-                    <div class="w-[310px] shadow bg-white p-[32px] rounded-[12px]">
+                    <div class="card w-[310px] shadow bg-white p-[32px] rounded-[12px]">
                     <!-- Icons  -->
                     <div class="flex justify-between items-center">
                         <div class=" bg-[#FFE3E2] w-[60px] h-[60px] flex justify-center items-center rounded-[16px]"><img class="w-[32px] h-[32px]" src="assets/emergency.png" alt="emergency icon"></div>
-                        <i class="fa-regular fa-heart h-[24px]"></i>
+                        <i class="heartAction fa-regular fa-heart h-[24px]"></i>
                     </div>
                     <!-- Service headline  -->
                     <div class="mt-4">
@@ -274,22 +271,22 @@
                     </div>
                     <!-- Service number & category  -->
                     <div class="mt-6">
-                        <h4 class="text-[32px] font-bold">16445</h4>
+                        <h4 class="text-[32px] font-bold copyNumber">16445</h4>
                         <div class="bg-[#F2F2F2] px-[16px] py-[6px] w-[69px] rounded-[9999px]"><p class="text-[18px] text-[#5C5C5C]" >NGO</p></div>
                     </div>
                     <!-- Action Buttons  -->
                     <div class="flex gap-[8px] mt-6">
-                        <button class="btn btn_copy"> <i class="fa-regular fa-copy"></i> Copy</button>
+                        <button class="btn btn_copy copyAction"> <i class="fa-regular fa-copy"></i> Copy</button>
                         <button class="btn btn_call"> <i class="fa-solid fa-phone"></i>Call</button>
                     </div>
                     </div>
 
                     <!-- Bangladesh Railway Helpline  -->
-                    <div class="w-[310px] shadow bg-white p-[32px] rounded-[12px]">
+                    <div class="card w-[310px] shadow bg-white p-[32px] rounded-[12px]">
                     <!-- Icons  -->
                     <div class="flex justify-between items-center">
                         <div class=" bg-[#FFE3E2] w-[60px] h-[60px] flex justify-center items-center rounded-[16px]"><img class="w-[32px] h-[32px]" src="assets/emergency.png" alt="emergency icon"></div>
-                        <i class="fa-regular fa-heart h-[24px]"></i>
+                        <i class="heartAction fa-regular fa-heart h-[24px]"></i>
                     </div>
                     <!-- Service headline  -->
                     <div class="mt-4">
@@ -297,13 +294,13 @@
                         <p class="text-[18px] text-[#5C5C5C]">Bangladesh Railway</p>
                     </div>
                     <!-- Service number & category  -->
-                    <div class="mt-6">
-                        <h4 class="text-[32px] font-bold">163</h4>
+                    <div class="mt-6 ">
+                        <h4 class="text-[32px] font-bold copyNumber">163</h4>
                         <div class="bg-[#F2F2F2] px-[16px] py-[6px] w-[79px] rounded-[9999px]"><p class="text-[18px] text-[#5C5C5C]" >Travel</p></div>
                     </div>
                     <!-- Action Buttons  -->
                     <div class="flex gap-[8px] mt-6">
-                        <button class="btn btn_copy"> <i class="fa-regular fa-copy"></i> Copy</button>
+                        <button class="btn btn_copy copyAction"> <i class="fa-regular fa-copy"></i> Copy</button>
                         <button class="btn btn_call"> <i class="fa-solid fa-phone"></i>Call</button>
                     </div>
                     </div>
@@ -337,6 +334,9 @@
             
         </section>
     </main>
+
+    <!-- Connecting JS File...  -->
+    <script src="script.js"></script>
 
 </body>
 </html>
